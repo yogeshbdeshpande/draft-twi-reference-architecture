@@ -24,7 +24,7 @@ author:
 
 -
   name: Mark Novak
-  org: JP Morgan 
+  org: JP Morgan
   email: mark.novak@outlook.com
 
 -
