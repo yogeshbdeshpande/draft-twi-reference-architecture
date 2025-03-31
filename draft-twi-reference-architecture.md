@@ -1,7 +1,7 @@
 ---
 title: Trusted Workload Identity Reference Architecture
 abbrev: TWI Reference Architecture
-docname: draft-twi-reference-architecture
+docname: draft-twi-reference-architecture-latest
 category: info
 ipr: trust200902
 area: Security
