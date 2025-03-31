@@ -37,7 +37,10 @@ informative:
 
 
 --- abstract
-
+Technological advancement coupled with security concerns demands more and more use cases, that require data-in-use protections.
+In addition regulatory bodies around the world increasingly require data-in-use protection and privacy enhancing technologies.
+Correspondingly, there is an increased push to harmonize management and governance of human and non-human identities.
+This draft will address the core issue of managing workload identity in context of Confidential Computing requirements.
 
 
 --- middle
