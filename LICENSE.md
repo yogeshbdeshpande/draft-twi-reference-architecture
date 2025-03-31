@@ -1,4 +1,4 @@
 # License
 
 See the
-[guidelines for contributions](https://github.com/ietf-rats/draft-deshpande-multi-verifier/blob/main/CONTRIBUTING.md).
+[guidelines for contributions](https://github.com/yogeshbdeshpande/draft-twi-reference-architecture/blob/main/CONTRIBUTING.md).
