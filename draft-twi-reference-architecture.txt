@@ -92,7 +92,8 @@ Table of Contents
    capitals, as shown here.
 
    This document uses terms and concepts defined by the WIMSE and RATS
-   architecture.  For a complete glossary, see Section 4 of [RFC9334].
+   architecture.  For a complete glossary, see Section 4 of [RFC9334] &
+   [I-D.draft-ietf-wimse-arch].
 
 2.1.  Glossary
 
@@ -168,6 +169,14 @@ Table of Contents
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
 9.2.  Informative References
+
+   [I-D.draft-ietf-wimse-arch]
+              Salowey, J. A., Rosomakho, Y., and H. Tschofenig,
+              "Workload Identity in a Multi System Environment (WIMSE)
+              Architecture", Work in Progress, Internet-Draft, draft-
+              ietf-wimse-arch-04, 2 March 2025,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-wimse-
+              arch-04>.
 
    [RFC9334]  Birkholz, H., Thaler, D., Richardson, M., Smith, N., and
               W. Pan, "Remote ATtestation procedureS (RATS)
