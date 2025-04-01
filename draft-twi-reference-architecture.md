@@ -39,8 +39,8 @@ informative:
 --- abstract
 Technological advancement coupled with security concerns demands more and more use cases, that require data-in-use protections.
 In addition regulatory bodies around the world increasingly require data-in-use protection and privacy enhancing technologies.
-Correspondingly, there is an increased push to harmonize management and governance of human and non-human identities.
-This draft will address the core issue of managing workload identity in context of Confidential Computing requirements.
+As these advanced technologies are been deployed, challenge remains how to identify the workloads and put trust behind them?
+This draft will address the core issue of managing a trustworthy workload identity meeting Confidential Computing requirements.
 
 
 --- middle
@@ -55,13 +55,29 @@ To be filled
 
 This document uses terms and concepts defined by the WIMSE and RATS architecture. For a complete glossary, see {{Section 4 of -rats-arch}}.
 
-Specifically this document heavily uses the terms Layered Attester {{Section 3.2 of -rats-arch}} and Composite Device {{Section 3.3 of -rats-arch}}
 
 ## Glossary
 {: #sec-glossary }
 
 This document uses the following terms:
 
+# TWI Use Cases
+Following are some of the use cases demanding trustworthy workload identity.
+
+1. A ML Model Owner (acting as Relying Party) wants to deploy its Workload with a unique identity in a privacy
+preserving manner. It needs to ensure that the deployed workload is operating in an environment with certain
+security guaranetees, such as isolated from cloud hosting environment and can be periodically attested.
+
+
+2. A Worklaod operating as a deployed lambda running in an isolated environment.
+
+# Core Requirements
+
+## Workload composition
+
+## Workload lifespan
+
+##
 
 # TWI Reference Architecture
 {: #sec-ref-architecture }
@@ -69,13 +85,6 @@ This document uses the following terms:
 This sections describes in detail, the Reference Architecture for Trusted Workload Identity system
 
 ## Assumptions
-
-
-## Core Requirements
-
-Figure below shows the  Architecture.
-
-
 
 ## Roles in the TWI Eco-System
 The following sub-sections describe the various roles that exist in the TWI eco-system.
