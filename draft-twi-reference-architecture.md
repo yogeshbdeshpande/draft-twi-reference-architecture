@@ -38,8 +38,8 @@ informative:
 
 --- abstract
 Technological advancement coupled with security concerns demands more and more use cases, that require data-in-use protections.
-In addition regulatory bodies around the world increasingly require data-in-use protection and privacy enhancing technologies.
-As these advanced technologies are been deployed, challenge remains how to identify the workloads and put trust behind them?
+In addition, regulatory bodies around the world increasingly require data-in-use protection and privacy enhancing technologies.
+As these advanced technologies are being deployed, challenge remains how to identify the workloads and put trust behind them?
 This draft will address the core issue of managing a trustworthy workload identity meeting Confidential Computing requirements.
 
 
@@ -67,10 +67,10 @@ Following are some of the use cases demanding trustworthy workload identity.
 
 1. A ML Model Owner (acting as Relying Party) wants to deploy its Workload with a unique identity in a privacy
 preserving manner. It needs to ensure that the deployed workload is operating in an environment with certain
-security guaranetees, such as isolated from cloud hosting environment and can be periodically attested.
+security guarantees, such as isolated from cloud hosting environment and can be periodically attested.
 
 
-2. A Worklaod operating as a deployed lambda running in an isolated environment.
+2. A Workload operating as a deployed lambda running in an isolated environment.
 
 # Core Requirements
 
