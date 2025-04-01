@@ -34,7 +34,7 @@ author:
 
 informative:
   RFC9334: rats-arch
-
+  I-D.draft-ietf-wimse-arch: WIMSE
 
 --- abstract
 Technological advancement coupled with security concerns demands more and more use cases, that require data-in-use protections.
@@ -53,7 +53,8 @@ To be filled
 
 {::boilerplate bcp14}
 
-This document uses terms and concepts defined by the WIMSE and RATS architecture. For a complete glossary, see {{Section 4 of -rats-arch}}.
+This document uses terms and concepts defined by the WIMSE and RATS architecture. For a complete glossary,
+see {{Section 4 of -rats-arch}} & {{-WIMSE}}.
 
 
 ## Glossary
