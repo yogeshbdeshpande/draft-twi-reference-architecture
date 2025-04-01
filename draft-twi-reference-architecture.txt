@@ -5,8 +5,8 @@
 WIMSE                                                           M. Novak
 Internet-Draft                                                 JP Morgan
 Intended status: Informational                              Y. Deshpande
-Expires: 2 October 2025                                              arm
-                                                           31 March 2025
+Expires: 3 October 2025                                              arm
+                                                            1 April 2025
 
 
             Trusted Workload Identity Reference Architecture
@@ -17,11 +17,11 @@ Abstract
    Technological advancement coupled with security concerns demands more
    and more use cases, that require data-in-use protections.  In
    addition regulatory bodies around the world increasingly require
-   data-in-use protection and privacy enhancing technologies.
-   Correspondingly, there is an increased push to harmonize management
-   and governance of human and non-human identities.  This draft will
-   address the core issue of managing workload identity in context of
-   Confidential Computing requirements.
+   data-in-use protection and privacy enhancing technologies.  As these
+   advanced technologies are been deployed, challenge remains how to
+   identify the workloads and put trust behind them?  This draft will
+   address the core issue of managing a trustworthy workload identity
+   meeting Confidential Computing requirements.
 
 Status of This Memo
 
@@ -38,7 +38,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 2 October 2025.
+   This Internet-Draft will expire on 3 October 2025.
 
 Copyright Notice
 
@@ -59,21 +59,24 @@ Table of Contents
    1.  Introduction
    2.  Conventions and Definitions
      2.1.  Glossary
-   3.  TWI Reference Architecture
-     3.1.  Assumptions
-     3.2.  Core Requirements
-     3.3.  Roles in the TWI Eco-System
-       3.3.1.  Verifier
-       3.3.2.  Identity Provider
-       3.3.3.  Credential Issuer
-     3.4.  Reference Architecture
-   4.  Security Considerations
-   5.  IANA Considerations
-     5.1.  CBOR Tag Registrations
-   6.  Acknowledgements
-   7.  References
-     7.1.  Normative References
-     7.2.  Informative References
+   3.  TWI Use Cases
+   4.  Core Requirements
+     4.1.  Workload composition
+     4.2.  Workload lifespan
+   5.  TWI Reference Architecture
+     5.1.  Assumptions
+     5.2.  Roles in the TWI Eco-System
+       5.2.1.  Verifier
+       5.2.2.  Identity Provider
+       5.2.3.  Credential Issuer
+     5.3.  Reference Architecture
+   6.  Security Considerations
+   7.  IANA Considerations
+     7.1.  CBOR Tag Registrations
+   8.  Acknowledgements
+   9.  References
+     9.1.  Normative References
+     9.2.  Informative References
    Authors' Addresses
 
 1.  Introduction
@@ -91,55 +94,69 @@ Table of Contents
    This document uses terms and concepts defined by the WIMSE and RATS
    architecture.  For a complete glossary, see Section 4 of [RFC9334].
 
-   Specifically this document heavily uses the terms Layered Attester
-   Section 3.2 of [RFC9334] and Composite Device Section 3.3 of
-   [RFC9334]
-
 2.1.  Glossary
 
    This document uses the following terms:
 
-3.  TWI Reference Architecture
+3.  TWI Use Cases
+
+   Following are some of the use cases demanding trustworthy workload
+   identity.
+
+   1.  A ML Model Owner (acting as Relying Party) wants to deploy its
+       Workload with a unique identity in a privacy preserving manner.
+       It needs to ensure that the deployed workload is operating in an
+       environment with certain security guaranetees, such as isolated
+       from cloud hosting environment and can be periodically attested.
+
+   2.  A Worklaod operating as a deployed lambda running in an isolated
+       environment.
+
+4.  Core Requirements
+
+4.1.  Workload composition
+
+4.2.  Workload lifespan
+
+   ##
+
+5.  TWI Reference Architecture
 
    This sections describes in detail, the Reference Architecture for
    Trusted Workload Identity system
 
-3.1.  Assumptions
+5.1.  Assumptions
 
-3.2.  Core Requirements
-
-   Figure below shows the Architecture.
-
-3.3.  Roles in the TWI Eco-System
+5.2.  Roles in the TWI Eco-System
 
    The following sub-sections describe the various roles that exist in
    the TWI eco-system.
 
-3.3.1.  Verifier
+5.2.1.  Verifier
 
-3.3.2.  Identity Provider
+5.2.2.  Identity Provider
 
-3.3.3.  Credential Issuer
+5.2.3.  Credential Issuer
 
-3.4.  Reference Architecture
+5.3.  Reference Architecture
 
-4.  Security Considerations
-
-
-   // TODO
-
-5.  IANA Considerations
-
-5.1.  CBOR Tag Registrations
-
-6.  Acknowledgements
+6.  Security Considerations
 
 
    // TODO
 
-7.  References
+7.  IANA Considerations
 
-7.1.  Normative References
+7.1.  CBOR Tag Registrations
+
+8.  Acknowledgements
+
+
+   // TODO
+
+9.  References
+
+9.1.  Normative References
 
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
@@ -150,7 +167,7 @@ Table of Contents
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/rfc/rfc8174>.
 
-7.2.  Informative References
+9.2.  Informative References
 
    [RFC9334]  Birkholz, H., Thaler, D., Richardson, M., Smith, N., and
               W. Pan, "Remote ATtestation procedureS (RATS)
